@@ -5,7 +5,7 @@ public class Post {
     private int PostID;
     //Post.PostName varchar(20)
     private String PostName;
-
+    public Post(){}
     public int getPostID() {
         return PostID;
     }

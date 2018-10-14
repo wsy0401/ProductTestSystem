@@ -8,9 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>Login</title>
   </head>
   <body>
-  $END$
+  <form action="LoginServlet" method="post">
+
+    用户名：<input name="username" type="text">
+    密码：<input name="password" type="password">
+    <input type="submit" value="submit">
+  </form>
   </body>
 </html>

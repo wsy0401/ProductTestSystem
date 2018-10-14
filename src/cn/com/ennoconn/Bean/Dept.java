@@ -5,7 +5,12 @@ public class Dept {
     private String DeptCode;
     //Dept.DeptDescription varchar(255)
     private String DeptDescription;
-    //Dept.DeptLeader int(20)
-    private User DeptLeader;
 
+    public void setDeptCode(String deptCode) {
+        DeptCode = deptCode;
+    }
+
+    public void setDeptDescription(String deptDescription) {
+        DeptDescription = deptDescription;
+    }
 }
