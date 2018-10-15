@@ -18,8 +18,9 @@ public class DeptDAO {
         String getDeptSQL = "select * from " + TABLE + " where " + COL_DEPTCODE + " = ?";
         PreparedStatement preparedStatement = null;
         ResultSet rs=null;
+        Connection connection=null;
         try {
-            Connection connection = ProductTestSystemDBUtil.getConnection();
+            connection = ProductTestSystemDBUtil.getConnection();
             preparedStatement = connection.prepareStatement(getDeptSQL);
             preparedStatement.setString(1, deptCode);
             rs = preparedStatement.executeQuery();
@@ -37,6 +38,8 @@ public class DeptDAO {
                 }
                 if (rs!=null)
                     rs.close();
+                if(connection!=null)
+                    connection.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }

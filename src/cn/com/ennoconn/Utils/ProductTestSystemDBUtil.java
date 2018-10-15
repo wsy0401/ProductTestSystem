@@ -1,8 +1,6 @@
 package cn.com.ennoconn.Utils;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class ProductTestSystemDBUtil {
     private static String IP = "192.168.109.168";
@@ -26,5 +24,17 @@ public class ProductTestSystemDBUtil {
         System.out.println(url);
         return DriverManager.getConnection(url, LOGINNAME, PASSWORD);
 
+    }
+    public static void exitQuery(ResultSet rs, PreparedStatement ps,Connection conn){
+        try {
+            if(rs!=null)
+                rs.close();
+            if(ps!=null)
+                ps.close();
+            if(conn!=null)
+                conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

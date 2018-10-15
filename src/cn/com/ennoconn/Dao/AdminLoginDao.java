@@ -58,6 +58,7 @@ public class AdminLoginDao {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}finally{
+			//TODO 使用自己数据库的DBUtil类去关闭rs，ps，connection
 			try {
 				if (rs != null)
 					rs.close();
@@ -68,7 +69,7 @@ public class AdminLoginDao {
 			} catch (SQLException e2) {
 				e2.printStackTrace();
 			}
-			
+
 		}
 		return false;
 	}
