@@ -34,6 +34,69 @@ li {
     margin: 0 auto;
 }
 
+#menu, #menu ul, #menu ul li, #menu ul li a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+#menu {
+    width: auto;
+    border-bottom: 3px solid #4071A0;
+    font-family: Raleway, sans-serif;
+    line-height: 1;
+}
+
+#menu:after,#menu ul:after{
+    content:"";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu ul li a {
+    z-index: 2;
+    padding: 10px 50px 8px 35px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: -4px;
+}
+
+/*设置菜单选项鼠标放上去或者点击激活状态的文字颜色*/
+#menu ul li.active a,
+#menu ul li:hover a,
+#menu ul li a:hover {
+    color: #ffffff;
+}
+
+#menu ul li.active a:after ,
+#menu ul li:hover a:after,
+#menu ul li a:hover:after{
+    background: #4071A0;
+}
+
+#menu ul li a:after {
+    border: solid 1px #4071A0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 94%;
+    height: 100%;
+    content: '';
+}
+
 .footer {
     clear: both;
     height: 35px;
@@ -43,19 +106,22 @@ li {
     margin-bottom: 20px;
 
 }
-.footer-resize{
+
+.footer-resize {
     width: 960px;
     margin: 0 auto;
     height: 35px;
     padding: 9px 5px 0 5px;
 }
-.Copyright{
+
+.Copyright {
     float: left;
 }
-.footer-nav{
+
+.footer-nav {
     float: right;
 }
 
-.footer-nav a{
+.footer-nav a {
     text-decoration: underline;
 }

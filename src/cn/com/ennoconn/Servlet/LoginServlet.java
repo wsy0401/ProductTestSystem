@@ -16,13 +16,12 @@ public class LoginServlet extends HttpServlet {
         } else {
             String username = request.getParameter("username");
             String password = request.getParameter("password");
-//      System.out.println(username+" " + password);
             UserDao userDao = new UserDao();
             User user = userDao.getUser(username, password);
             if (user == null) {
                 //TODO 显示用户名或密码错误
             }
-            //设置session
+            //TODO 设置session
             session = request.getSession();
             session.setAttribute("username",username);
             session.setAttribute("password",password);
@@ -37,6 +36,7 @@ public class LoginServlet extends HttpServlet {
 //                userNameCookie.setPath("/");    //这里设置的是这个cookie可以被当前项目中的那些servlet所访问，/代表所有的servlet均可访问
 //                response.addCookie(userNameCookie);
 //            }
+            response.sendRedirect("/HomePage/HomePage.jsp");
         }
     }
 

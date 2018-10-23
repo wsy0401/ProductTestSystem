@@ -29,15 +29,17 @@
                 <a href="javascript: void(0)" onclick="">
                     <img src="../CommonImages/Home1.png" title="Home" width="30" height="30" hspace="5">
                 </a><a href="javascript: void(0)" onclick="">
-                    <img src="../CommonImages/Icon_Manual.png" title="User Guide" width="30" height="30" hspace="5">
+                <img src="../CommonImages/Icon_Manual.png" title="User Guide" width="30" height="30" hspace="5">
+            </a>
+                <a href="javascript: void(0)" onclick="">
+                    <img src="../CommonImages/Icon_Collaborative_Platform.png" title="R&D Collaborative Platform"
+                         width="30"
+                         height="30" hspace="5">
                 </a>
                 <a href="javascript: void(0)" onclick="">
-                    <img src="../CommonImages/Icon_Collaborative_Platform.png" title="R&D Collaborative Platform" width="30"
-                     height="30" hspace="5">
-                </a>
-                <a href="javascript: void(0)" onclick="">
-                    <img src="../CommonImages/personal_information.png" title="Personal Information" width="30" height="30"
-                     hspace="5">
+                    <img src="/CommonImages/personal_information.png" title="Personal Information" width="30"
+                         height="30"
+                         hspace="5">
                 </a>
                 <%--TODO 这里需要从session中读取当前用户的用户名--%>
 
@@ -48,8 +50,12 @@
 
 
 <%--这里是每个不同的页面的菜单--%>
-<div class="pagemenu">
-
+<div id="menu">
+    <ul class="nav">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 
 </div>
 

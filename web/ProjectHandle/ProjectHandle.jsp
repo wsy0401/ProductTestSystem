@@ -8,9 +8,33 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>HomePage</title>
+    <title>Handle Project</title>
     <link href="../CommonCSS/style.css" rel="stylesheet" type="text/css">
-    <link href="Homepage.css" rel="stylesheet" type="text/css">
+    <script src="../jquery-3.3.1.js"></script>
+    <script>
+        /*
+        * 这里的作用是自动设置Frame的高度，前提条件是iframe的src和当前文件在同一个顶级域名下
+        * 具体请参考http://caibaojian.com/iframe-adjust-content-height.html
+        */
+        /*
+		 * When the iframe is on a different subdomain, uncomment the following line
+		 * and change "example.com" to your domain.
+		 */
+        // document.domain = "example.com";
+        function setIframeHeight() {
+            var iframe=document.getElementById("ProjectHandleIframe");
+            if (iframe) {
+                var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+                if (iframeWin.document.body) {
+                    iframe.paddingTop=20+"px";
+                    iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+                }
+            }
+        };
+        window.onresize=function () {
+            setIframeHeight();
+        }
+    </script>
 </head>
 <body>
 <%--这里是整个页面的头部--%>
@@ -53,23 +77,14 @@
 <%--这里是每个不同的页面的菜单--%>
 <div id="menu">
     <ul class="nav">
-        <li id="Home">
-            <a href="HomePage.jsp">Home</a>
-        </li>
-        <li id="My_Information">
-            <a href="">My_Information</a>
-        </li>
-        <li id="Analysis">
-            <a href="">Analysis</a>
-        </li>
+        <li></li>
+        <li></li>
+        <li></li>
     </ul>
 
 </div>
-<%-- TODO 这里要设置onload，onload中填写javascript代码，onload操作在frame或iframe载入完成后触发--%>
-<iframe src="HomeFrame.jsp" onload="changeFrameHeight()" width="100%" frameborder="0" scrolling="no" style="height: 300px;overflow: hidden;" onload="">
-
-</iframe>
-
+<div id="process" style="margin-top:20px"></div>
+<iframe src="ProjectHandleFrame.jsp" id="ProjectHandleIframe" width="100%" frameborder="0" onload="setIframeHeight()"></iframe>
 <%--这里是整个页面的尾部，会包含copyright等信息--%>
 <div class="footer">
     <div class="footer-resize">
