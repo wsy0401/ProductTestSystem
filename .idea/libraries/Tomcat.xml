@@ -2,9 +2,26 @@
   <library name="Tomcat">
     <CLASSES>
       <root url="file://D:/ProgramFiles/Tomcat-8.5/lib" />
+      <root url="file://D:/ProgramFiles/Tomcat-8.5-src" />
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
+    <JAVADOC>
+      <root url="file://D:/ProgramFiles/Tomcat-8.5-doc/api" />
+      <root url="file://D:/ProgramFiles/Tomcat-8.5-doc/elapi" />
+      <root url="file://D:/ProgramFiles/Tomcat-8.5-doc/jspapi" />
+      <root url="file://D:/ProgramFiles/Tomcat-8.5-doc/servletapi" />
+      <root url="file://D:/ProgramFiles/Tomcat-8.5-doc/websocketapi" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://D:/ProgramFiles/Tomcat-8.5-src/java" />
+      <root url="file://D:/ProgramFiles/Tomcat-8.5-src/modules/jdbc-pool/src/main/java" />
+      <root url="file://D:/ProgramFiles/Tomcat-8.5-src/modules/jdbc-pool/src/test/java" />
+      <root url="file://D:/ProgramFiles/Tomcat-8.5-src/test" />
+      <root url="file://D:/ProgramFiles/Tomcat-8.5-src/webapps/docs/appdev/sample/src" />
+      <root url="file://D:/ProgramFiles/Tomcat-8.5-src/webapps/examples/WEB-INF/classes" />
+      <root url="file://D:/ProgramFiles/Tomcat-8.5-src/webapps/examples/WEB-INF/jsp/applet" />
+      <root url="file://D:/ProgramFiles/Tomcat-8.5-src/webapps/examples/jsp/plugin/applet" />
+      <root url="file://D:/ProgramFiles/Tomcat-8.5-doc/appdev/sample/src" />
+    </SOURCES>
     <jarDirectory url="file://D:/ProgramFiles/Tomcat-8.5/lib" recursive="false" />
   </library>
 </component>
