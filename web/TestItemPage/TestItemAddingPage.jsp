@@ -1,14 +1,14 @@
 <%--
   Created by IntelliJ IDEA.
   User: Jim.Wu
-  Date: 2018/10/10
-  Time: 8:42
+  Date: 2018/10/24
+  Time: 14:01
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title></title>
+    <title>Select Test Item</title>
     <link href="../CommonCSS/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -59,7 +59,7 @@
 
 </div>
 
-<iframe src="" frameborder="0" onload=""></iframe>
+<iframe src="" frameborder="0" onload="" width="100%"></iframe>
 
 <%--这里是整个页面的尾部，会包含copyright等信息--%>
 <div class="footer">

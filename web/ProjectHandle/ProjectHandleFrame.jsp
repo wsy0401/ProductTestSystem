@@ -144,7 +144,7 @@
 <%--TODO 这里是提单的进程显示--%>
 <table id="HandleProcess" width="100%" cellspacing="0" cellpadding="0" border="0">
     <tbody>
-        <th colspan="6" align="center" class="ProjectHandleTh">HandleProcess</th>
+    <th colspan="6" align="center" class="ProjectHandleTh">HandleProcess</th>
     <tr>
         <td class="HandleProcessTh" width="2%">No.</td>
         <td class="HandleProcessTh" width="4%">Step Name</td>
