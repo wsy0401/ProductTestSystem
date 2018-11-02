@@ -8,9 +8,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>HomePage</title>
+    <title></title>
     <link href="../CommonCSS/style.css" rel="stylesheet" type="text/css">
-    <link href="Homepage.css" rel="stylesheet" type="text/css">
     <script src="../CommonJS/Common.js"></script>
 </head>
 <body>
@@ -54,22 +53,14 @@
 <%--这里是每个不同的页面的菜单--%>
 <div id="menu">
     <ul class="nav">
-        <li id="Home">
-            <a href="HomePage.jsp">Home</a>
-        </li>
-        <li id="My_Information">
-            <a href="">My_Information</a>
-        </li>
-        <li id="Analysis">
-            <a href="">Analysis</a>
-        </li>
+        <li></li>
+        <li></li>
+        <li></li>
     </ul>
 
 </div>
-<%-- TODO 这里要设置onload，onload中填写javascript代码，onload操作在frame或iframe载入完成后触发--%>
-<iframe src="HomeFrame.jsp" onload="setIframeHeight(this)" width="100%" frameborder="0" scrolling="no" style="height: 300px;overflow: hidden;" onload="">
 
-</iframe>
+<iframe src="" frameborder="0" onload=""></iframe>
 
 <%--这里是整个页面的尾部，会包含copyright等信息--%>
 <div class="footer">

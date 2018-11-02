@@ -12,29 +12,9 @@
     <link href="../CommonCSS/style.css" rel="stylesheet" type="text/css">
     <script src="../jquery-3.3.1.js"></script>
     <script>
-        /*
-        * 这里的作用是自动设置Frame的高度，前提条件是iframe的src和当前文件在同一个顶级域名下
-        * 具体请参考http://caibaojian.com/iframe-adjust-content-height.html
-        */
-        /*
-		 * When the iframe is on a different subdomain, uncomment the following line
-		 * and change "example.com" to your domain.
-		 */
-        // document.domain = "example.com";
-        function setIframeHeight() {
-            var iframe=document.getElementById("ProjectHandleIframe");
-            if (iframe) {
-                var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
-                if (iframeWin.document.body) {
-                    iframe.paddingTop=20+"px";
-                    iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
-                }
-            }
-        };
-        window.onresize=function () {
-            setIframeHeight();
-        }
+
     </script>
+    <script src="../CommonJS/Common.js"></script>
 </head>
 <body>
 <%--这里是整个页面的头部--%>

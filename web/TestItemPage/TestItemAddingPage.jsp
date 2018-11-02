@@ -59,7 +59,7 @@
 
 </div>
 
-<iframe src="" frameborder="0" onload="" width="100%"></iframe>
+<iframe src="TestItemAddingFrame.jsp" frameborder="0" onload="setIframeHeight(this)" width="100%"></iframe>
 
 <%--这里是整个页面的尾部，会包含copyright等信息--%>
 <div class="footer">

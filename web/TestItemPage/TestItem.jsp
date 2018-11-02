@@ -10,21 +10,7 @@
 <head>
     <title>TestItemHandle</title>
     <link href="../CommonCSS/style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript">
-        function setIframeHeight() {
-            var iframe=document.getElementById("ProjectHandleIframe");
-            if (iframe) {
-                var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
-                if (iframeWin.document.body) {
-                    iframe.paddingTop=20+"px";
-                    iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
-                }
-            }
-        };
-        window.onresize=function () {
-            setIframeHeight();
-        }
-    </script>
+    <script src="../CommonJS/Common.js"></script>
 </head>
 <body>
 <%--这里是整个页面的头部--%>
@@ -74,7 +60,7 @@
 
 </div>
 
-<iframe src="./TestItemHandleFrame.jsp" frameborder="0" onload="setIframeHeight()" width="100%"></iframe>
+<iframe src="./TestItemHandleFrame.jsp" frameborder="0" onload="setIframeHeight(this)" width="100%" onresize="setIframeHeight(this)"></iframe>
 
 <%--这里是整个页面的尾部，会包含copyright等信息--%>
 <div class="footer">

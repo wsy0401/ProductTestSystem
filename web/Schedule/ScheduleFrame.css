@@ -1,0 +1,48 @@
+body{
+    /*width: 950px;*/
+}
+.SearchBar{
+    text-align: center;
+}
+
+.SearchResultHeader {
+    line-height: 12pt;
+    color: white;
+}
+.SearchResultHeader div{
+    float:left;
+    text-decoration: underline;
+    margin-left: 1px;
+    margin-right: 1px;
+    background-color: #4071A0;
+
+}
+.SearchResultHeader:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.No{
+    width: 2%;
+}
+.RequestID{
+    width: 4%;
+}
+.PD{
+    width: 4%;
+}
+.ProductName{
+    width: 6%;
+}
+.Task{
+    width: 5%;
+}
+.NPIStage{
+    width: 4%;
+}
+.Team{
+    width: 4%;
+}
+.Applicant{
+    width: 4%;
+}

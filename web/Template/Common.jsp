@@ -10,6 +10,7 @@
 <head>
     <title></title>
     <link href="../CommonCSS/style.css" rel="stylesheet" type="text/css">
+    <script src="../CommonJS/Common.js"></script>
 </head>
 <body>
 <%--这里是整个页面的头部--%>
@@ -59,7 +60,7 @@
 
 </div>
 
-<iframe src="" frameborder="0" onload=""></iframe>
+<iframe src="" frameborder="0" onload="setIframeHeight(this)"></iframe>
 
 <%--这里是整个页面的尾部，会包含copyright等信息--%>
 <div class="footer">
