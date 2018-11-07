@@ -22,27 +22,51 @@ body{
     display: block;
     clear: both;
 }
-.No{
-    width: 2%;
+/*.No{*/
+    /*width: 2%;*/
+/*}*/
+/*.RequestID{*/
+    /*width: 4%;*/
+/*}*/
+/*.PD{*/
+    /*width: 4%;*/
+/*}*/
+/*.ProductName{*/
+    /*width: 6%;*/
+/*}*/
+/*.Task{*/
+    /*width: 5%;*/
+/*}*/
+/*.NPIStage{*/
+    /*width: 4%;*/
+/*}*/
+/*.Team{*/
+    /*width: 4%;*/
+/*}*/
+/*.Applicant{*/
+    /*width: 4%;*/
+/*}*/
+
+.aa{
+    line-height: 12pt;
+    font-style: normal;
+    color: black;
+    font-size: 9pt;
 }
-.RequestID{
-    width: 4%;
+
+.btna{
+    background-color: #4071A0;
+    color: white;
+    border-style: none;
 }
-.PD{
-    width: 4%;
+.titleFilter{
+    background-color: #4071A0;
+    color: white;
+    padding: 0;
+    border-style: none;
+    margin: 0;
 }
-.ProductName{
-    width: 6%;
-}
-.Task{
-    width: 5%;
-}
-.NPIStage{
-    width: 4%;
-}
-.Team{
-    width: 4%;
-}
-.Applicant{
-    width: 4%;
+
+tr.ScheduleItem:hover{
+    background-color: #ffcc99;
 }
