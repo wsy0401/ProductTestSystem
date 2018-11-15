@@ -70,3 +70,62 @@ body{
 tr.ScheduleItem:hover{
     background-color: #ffcc99;
 }
+div.ScheduleItemDetails{
+    width: 1280px;
+    margin: 0 auto 15px;
+    padding: 0;
+
+}
+.menubox{
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+}
+
+.tabborder{
+    border: 1px solid #999999;
+}
+
+.menubox ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top:3px;
+    left: 0;
+    margin-left: 15px;
+    height: 25px;
+    /*text-align: center;*/
+}
+
+.menubox li{
+    float: left;
+    padding: 0px;
+    width: 80px;
+    color: #004160;
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: 2px;
+    line-height: 20px;
+    background: white;
+    border: 1px solid #95c9e1;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.menubox li:hover{
+    background: #3a90c9;
+    color: white;
+
+}
+.contentbox{
+    clear: both;
+    margin:0;
+    border-top: none;
+    padding-top: 8px;
+}
+
+.mainborder{
+    border: 3px solid #ddd;
+}
+

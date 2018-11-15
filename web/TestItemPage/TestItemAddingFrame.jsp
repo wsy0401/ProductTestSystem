@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!DOCTYPE html>
 <head>
     <title>测试项选择与添加</title>
     <link href="../CommonCSS/style.css" type="text/css" rel="stylesheet">

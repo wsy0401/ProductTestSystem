@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!DOCTYPE html>
 <head>
     <title></title>
     <link href="../CommonCSS/style.css" rel="stylesheet" type="text/css">
@@ -60,7 +60,7 @@
 
 </div>
 
-<iframe src="" frameborder="0" onload=""></iframe>
+<iframe src="ScheduleFrame.jsp" frameborder="0" onload=""></iframe>
 
 <%--这里是整个页面的尾部，会包含copyright等信息--%>
 <div class="footer">
